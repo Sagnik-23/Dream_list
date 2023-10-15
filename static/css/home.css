@@ -71,3 +71,9 @@
     transform: translateY(-2px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.banner{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+}
