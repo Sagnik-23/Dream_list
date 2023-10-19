@@ -17,19 +17,19 @@
     align-items: center;
 }
 
-.navbar ul li{
+.navbar ul a li{
     list-style: none;
     padding: 3px 6px;
 }
 
-.navbar ul li:hover{
+.navbar ul a li:hover{
     border: 2px solid black; 
     border-radius: .25rem;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.navbar ul li a{
+.navbar ul a{
     text-decoration: none;
     color: black;
 }
