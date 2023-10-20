@@ -20,13 +20,16 @@
             <input type="button" value="Sign up" class="btn">
         </div>
     </div>
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id = "slide-1" class="myimage" src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Japan-1">
-                <img id = "slide-2" class="myimage" src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Japan-2">
-                <img id = "slide-3" class="myimage" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1794&q=80" alt="Japan-3">
-            </div>
+    <div class="slider-container">
+        <div class="slider">
+          <!-- Add your image elements here -->
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1794&q=80" alt="Image 1">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Image 2">
+          <img src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Image 3">
+          <!-- Add more images as needed -->
         </div>
-    </section>
+        <button class="prev"><</button>
+        <button class="next" id = "next">></button>
+      </div>
+      <script src="{{ url_for('static', filename='js/home.js') }}"></script>
 {% endblock %}
