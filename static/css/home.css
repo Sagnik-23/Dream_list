@@ -132,3 +132,19 @@
 .next {
     right: 0;
 }
+
+.info{
+    position: absolute;
+    top: 350px;
+    color: white;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.title, .subtitle{
+    margin: 0 45px;
+}
