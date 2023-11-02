@@ -148,3 +148,71 @@
 .title, .subtitle{
     margin: 0 45px;
 }
+
+.card{
+    border: none;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 20vw;
+    margin: 50px 25px;
+}
+
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.card-img{
+    max-width: 95%;
+    margin-top: 8px;
+    border-radius: 16px;
+}
+
+.captions{
+    display: flex;
+    margin: 10px 20px;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+
+.caption-1, .caption-2{
+    padding: 3px 8px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 23px;
+}
+
+.caption-2{
+    margin-left: 10px;
+}
+
+.heading{
+    margin: 5px 15px;
+    color: rgb(59, 59, 59);
+    font-size: 14px;
+}
+
+.desc{
+    margin: 5px 15px;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+
+.btn-1{
+    display: flex;
+    justify-content: center;
+}
+
+.button-1{
+    margin: 10px 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 23px;
+    background-color: #d0e6ff;
+    cursor: pointer;
+    color: #2e73b4;
+    font-weight: 700;
+}
