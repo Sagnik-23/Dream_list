@@ -149,6 +149,10 @@
     margin: 0 45px;
 }
 
+.cards{
+    display: flex;
+}
+
 .card{
     border: none;
     border-radius: 16px;
