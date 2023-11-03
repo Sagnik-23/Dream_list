@@ -149,8 +149,14 @@
     margin: 0 45px;
 }
 
+.content{
+    margin: 10px 20px;
+}
+
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
@@ -172,8 +178,10 @@
 
 .card-img{
     max-width: 95%;
+    height: 200px;
     margin-top: 8px;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .captions{
@@ -219,4 +227,5 @@
     cursor: pointer;
     color: #2e73b4;
     font-weight: 700;
+    margin-bottom: 20px;
 }
