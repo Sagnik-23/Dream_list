@@ -12,6 +12,13 @@
     font-weight: 500;
 }
 
+.navbar img{
+    max-width: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
 .navbar ul{
     display: flex;
     width: 30%;
