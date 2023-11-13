@@ -1,8 +1,9 @@
 import requests
-import json
 
 API_KEY = "6ba1f1149fcaab82cbfb0f993c5b3bba"
 
+
+# Search
 name = input("Enter movie name: ")
 modified_name = name.replace(" ", "+")
 
@@ -15,3 +16,4 @@ movie_title = data['results'][0]['original_title']
 movie_desc = data['results'][0]['overview']
 print(movie_title)
 print(movie_desc)
+# Search end
