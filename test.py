@@ -23,18 +23,24 @@ API_KEY = os.getenv("API_KEY")
 
 
 # Movie genre List
-response = requests.get(
-    f"https://api.themoviedb.org/3/genre/movie/list?language=en&api_key={API_KEY}")
-data = response.json()
+# response = requests.get(
+#     f"https://api.themoviedb.org/3/genre/movie/list?language=en&api_key={API_KEY}")
+# data = response.json()
 # print(data)
-# # print(data['genres'][0]['name'])
-# print(len(data['genres']))
+# # # print(data['genres'][0]['name'])
+#  print(len(data['genres']))
 
-for i in range(0, len(data['genres'])):
-    print("id: ", data['genres'][i]['id'])
-    print("name: ", data['genres'][i]['name'])
+# for i in range(0, len(data['genres'])):
+#     print("id: ", data['genres'][i]['id'])
+#     print("name: ", data['genres'][i]['name'])
 # Movie genre List end
 
 # Movie feed list
 page_no = 1
 url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page={page_no}&sort_by=popularity.desc&api_key={API_KEY}"
+response = requests.get(url)
+data = response.json()
+print(data)
+background_image = data['results'][0]['backdrop_path']
+background_image_url = f"https://image.tmdb.org/t/p/w400{background_image}"
+# Movie feed list end
