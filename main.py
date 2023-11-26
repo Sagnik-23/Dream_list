@@ -37,14 +37,28 @@ def get_feed_movies(page_no, index):
     genres = []
     for id in genre_id:
         genres.append(get_genres(id))
+    return index, background_image_url, genres, title, overview
 
 
 @app.route('/')
 def index():
     # if not session.get("name"):
     #     return redirect("/login")
-    title = "DreamList"
-    return render_template("home.html", title=title)
+    page_title = "DreamList"
+    background_image_url = []
+    genres = []
+    title = []
+    overview = []
+    index = []
+    for i in range(0, 20):
+        movie_index, movie_background_image_url, movie_genres, movie_title, movie_overview = get_feed_movies(
+            1, i)
+        index.append(movie_index)
+        background_image_url.append(movie_background_image_url)
+        genres.append(movie_genres)
+        title.append(movie_title)
+        overview.append(movie_overview)
+    return render_template("home.html", page_title=page_title, index=index, background_image_url=background_image_url, genres=genres, title=title, overview=overview)
 
 
 if __name__ == "__main__":

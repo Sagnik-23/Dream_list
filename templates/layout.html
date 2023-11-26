@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% block head %}{% endblock %}
-    <title>{{ title }}</title>
+    <title>{{ page_title }}</title>
 </head>
 <body>
     {% block body %}{% endblock %}

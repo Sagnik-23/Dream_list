@@ -136,6 +136,27 @@
                     <button class = "button-1">Read More</button>
                 </div>
             </div>
+            {% for movie_index in index %}
+                <div class="card">
+                    <div class="image">
+                        <img src= "{{ background_image_url[movie_index] }}" alt= "{{ title[movie_index] }}" class = "card-img">
+                    </div>
+                    <div class="captions">
+                        {% for genre in genres[movie_index] %}
+                            <div class="caption">{{ genre }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="heading">
+                        <h1>{{ title[movie_index] }}</h1>
+                    </div>
+                    <div class="desc">
+                        {{ overview[movie_index] }}
+                    </div>
+                    <div class="btn-1">
+                        <button class = "button-1">Read More</button>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
     <div class="footer">

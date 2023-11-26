@@ -198,13 +198,13 @@
     font-size: 15px;
 }
 
-.caption-1, .caption-2{
+.caption{
     padding: 3px 8px;
     border: 1px solid rgb(170, 170, 170);
     border-radius: 23px;
 }
 
-.caption-2{
+.caption:not(:first-child){
     margin-left: 10px;
 }
 
