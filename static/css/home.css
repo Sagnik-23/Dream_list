@@ -193,31 +193,52 @@
 
 .captions{
     display: flex;
-    margin: 10px 20px;
+    margin: 10px;
     color: rgb(100, 100, 100);
     font-size: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .caption{
     padding: 3px 8px;
     border: 1px solid rgb(170, 170, 170);
     border-radius: 23px;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .caption:not(:first-child){
     margin-left: 10px;
 }
 
+.captions::-webkit-scrollbar {
+    display: none;
+}
+
 .heading{
     margin: 5px 15px;
     color: rgb(59, 59, 59);
     font-size: 14px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.heading::-webkit-scrollbar {
+    display: none;
 }
 
 .desc{
     margin: 5px 15px;
     color: rgb(100, 100, 100);
     font-size: 15px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.desc::-webkit-scrollbar {
+    display: none;
 }
 
 .btn-1{
