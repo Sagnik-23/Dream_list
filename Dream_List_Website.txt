@@ -1,0 +1,22 @@
+Dream_List_Website
+
+TMDB API -> Data of movie and anime
+
+Show the data within css card:
+1. Title
+2. Description
+3. Image
+4. Rating
+When card is clicked a new route will be created
+
+Sections of the website:
+Home: Cards of the latest anime and movies
+My List: Coming soon
+About: About the website
+Search
+Sign up/ Login
+
+Sidebar:
+Latest movie
+Latest anime
+Top Recommendations
